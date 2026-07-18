@@ -1,0 +1,132 @@
+/* ===========================
+   Universal Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   CSS Custom Properties
+=========================== */
+
+:root{
+    --primary-color:#2563eb;
+    --secondary-color:#1e293b;
+    --accent-color:#f97316;
+    --background-color:#f8fafc;
+    --text-color:#334155;
+    --white:#ffffff;
+    --main-font:'Arial',sans-serif;
+}
+
+/* ===========================
+   Element Selector
+=========================== */
+
+body{
+    font-family:var(--main-font);
+    background:var(--background-color);
+    color:var(--text-color);
+}
+
+/* ===========================
+   Navbar
+   Class Selector
+=========================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--secondary-color);
+    padding:18px 60px;
+}
+
+/* ===========================
+   ID Selector
+=========================== */
+
+#logo{
+    color:var(--accent-color);
+    font-size:30px;
+}
+
+/* ===========================
+   Descendant Selectors
+=========================== */
+
+.nav-menu{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-menu li a{
+    text-decoration:none;
+    color:var(--white);
+    font-weight:bold;
+}
+
+.nav-menu li a:hover{
+    color:var(--accent-color);
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:var(--primary-color);
+    color:var(--white);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    text-decoration:none;
+    background:var(--accent-color);
+    color:var(--white);
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ea580c;
+}
+
+/* ===========================
+   About Section
+=========================== */
+
+.about{
+    padding:70px 60px;
+    text-align:center;
+}
+
+.about h2{
+    color:var(--primary-color);
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
